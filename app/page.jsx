@@ -10,6 +10,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-white to-zinc-100 dark:from-black dark:to-zinc-900 flex items-center justify-center px-4">
       <div className="w-full max-w-lg bg-white dark:bg-zinc-900 rounded-2xl shadow-xl p-10 border border-zinc-200 dark:border-zinc-800">
         
+        {/* Logo */}
         <div className="flex justify-center mb-6">
           <Image
             src="/next.svg"
@@ -20,6 +21,7 @@ export default function Home() {
           />
         </div>
 
+        {/* IF USER NOT LOGGED IN */}
         {status !== "authenticated" && (
           <>
             <h1 className="text-2xl font-bold text-center text-zinc-800 dark:text-zinc-100 mb-2">
